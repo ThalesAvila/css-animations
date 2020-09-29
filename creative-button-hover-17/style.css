@@ -32,12 +32,13 @@ button:before {
 	transition: all 0.25s;
 }
 
-button:hover:before, button:hover:after {
+button:hover:before,
+button:hover:after {
 	height: 100%;
 	width: 100%;
 }
 
-button:before {
+button::after {
 	content: '';
 	position: absolute;
 	width: 24px;
@@ -48,4 +49,3 @@ button:before {
 	border-right: 2px solid #c47135;
 	transition: all 0.25s;
 }
-
